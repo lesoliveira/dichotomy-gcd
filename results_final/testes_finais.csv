@@ -1,0 +1,163 @@
+tabela,métrica,comparação,grupo,n,dif,proposto_melhor,p
+gcd,test_all,proposto − SS-kmeans (K estimado),todos,50,0.041,44/50,0.0
+gcd,test_all,proposto − SS-kmeans (K estimado),sem CUB,40,0.048,35/40,0.0
+gcd,test_all,proposto − SS-kmeans (K estimado),imagens,30,0.016,25/30,0.0006
+gcd,test_all,proposto − SS-kmeans (K estimado),séries,20,0.079,19/20,0.0001
+gcd,test_all,proposto − SS-kmeans (K estimado),Omniglot,20,0.017,16/20,0.008
+gcd,test_all,proposto − SS-kmeans (K estimado),CUB,10,0.016,9/10,0.0195
+gcd,test_all,proposto − SS-kmeans (K oráculo),todos,50,0.045,42/50,0.0
+gcd,test_all,proposto − SS-kmeans (K oráculo),sem CUB,40,0.05,34/40,0.0
+gcd,test_all,proposto − SS-kmeans (K oráculo),imagens,30,0.029,24/30,0.0001
+gcd,test_all,proposto − SS-kmeans (K oráculo),séries,20,0.069,18/20,0.0008
+gcd,test_all,proposto − SS-kmeans (K oráculo),Omniglot,20,0.031,16/20,0.0017
+gcd,test_all,proposto − SS-kmeans (K oráculo),CUB,10,0.025,8/10,0.0195
+gcd,test_all,proposto − SS-kmeans + protótipos (K oráculo),todos,50,0.043,43/50,0.0
+gcd,test_all,proposto − SS-kmeans + protótipos (K oráculo),sem CUB,40,0.049,35/40,0.0
+gcd,test_all,proposto − SS-kmeans + protótipos (K oráculo),imagens,30,0.026,25/30,0.0002
+gcd,test_all,proposto − SS-kmeans + protótipos (K oráculo),séries,20,0.067,18/20,0.001
+gcd,test_all,proposto − SS-kmeans + protótipos (K oráculo),Omniglot,20,0.031,17/20,0.0011
+gcd,test_all,proposto − SS-kmeans + protótipos (K oráculo),CUB,10,0.018,8/10,0.1055
+gcd,test_all,proposto − dicotomia-euclid + ruído,todos,50,0.02,29/50,0.0152
+gcd,test_all,proposto − dicotomia-euclid + ruído,sem CUB,40,0.032,28/40,0.0002
+gcd,test_all,proposto − dicotomia-euclid + ruído,imagens,30,-0.0,13/30,0.9181
+gcd,test_all,proposto − dicotomia-euclid + ruído,séries,20,0.051,16/20,0.0014
+gcd,test_all,proposto − dicotomia-euclid + ruído,Omniglot,20,0.014,12/20,0.0521
+gcd,test_all,proposto − dicotomia-euclid + ruído,CUB,10,-0.029,1/10,0.0039
+gcd,test_new,proposto − SS-kmeans (K estimado),todos,50,0.033,36/50,0.0059
+gcd,test_new,proposto − SS-kmeans (K estimado),sem CUB,40,0.042,31/40,0.0013
+gcd,test_new,proposto − SS-kmeans (K estimado),imagens,30,0.016,21/30,0.2942
+gcd,test_new,proposto − SS-kmeans (K estimado),séries,20,0.059,15/20,0.0055
+gcd,test_new,proposto − SS-kmeans (K estimado),Omniglot,20,0.024,16/20,0.1043
+gcd,test_new,proposto − SS-kmeans (K estimado),CUB,10,-0.002,5/10,0.9922
+gcd,test_new,proposto − SS-kmeans (K oráculo),todos,50,0.034,30/50,0.0075
+gcd,test_new,proposto − SS-kmeans (K oráculo),sem CUB,40,0.041,26/40,0.0032
+gcd,test_new,proposto − SS-kmeans (K oráculo),imagens,30,0.034,20/30,0.0361
+gcd,test_new,proposto − SS-kmeans (K oráculo),séries,20,0.033,10/20,0.1251
+gcd,test_new,proposto − SS-kmeans (K oráculo),Omniglot,20,0.05,16/20,0.0112
+gcd,test_new,proposto − SS-kmeans (K oráculo),CUB,10,0.004,4/10,0.9766
+gcd,test_new,proposto − SS-kmeans + protótipos (K oráculo),todos,50,0.027,27/50,0.0811
+gcd,test_new,proposto − SS-kmeans + protótipos (K oráculo),sem CUB,40,0.037,24/40,0.0203
+gcd,test_new,proposto − SS-kmeans + protótipos (K oráculo),imagens,30,0.027,16/30,0.1904
+gcd,test_new,proposto − SS-kmeans + protótipos (K oráculo),séries,20,0.027,11/20,0.2272
+gcd,test_new,proposto − SS-kmeans + protótipos (K oráculo),Omniglot,20,0.047,13/20,0.0327
+gcd,test_new,proposto − SS-kmeans + protótipos (K oráculo),CUB,10,-0.015,3/10,0.5371
+gcd,test_new,proposto − dicotomia-euclid + ruído,todos,50,0.024,32/50,0.0642
+gcd,test_new,proposto − dicotomia-euclid + ruído,sem CUB,40,0.044,29/40,0.0032
+gcd,test_new,proposto − dicotomia-euclid + ruído,imagens,30,0.005,16/30,0.7951
+gcd,test_new,proposto − dicotomia-euclid + ruído,séries,20,0.051,16/20,0.0019
+gcd,test_new,proposto − dicotomia-euclid + ruído,Omniglot,20,0.037,13/20,0.1614
+gcd,test_new,proposto − dicotomia-euclid + ruído,CUB,10,-0.058,3/10,0.1289
+gcd,all,proposto − SS-kmeans (K estimado),todos,50,0.02,29/50,0.0197
+gcd,all,proposto − SS-kmeans (K estimado),sem CUB,40,0.027,26/40,0.0078
+gcd,all,proposto − SS-kmeans (K estimado),imagens,30,-0.003,12/30,0.8451
+gcd,all,proposto − SS-kmeans (K estimado),séries,20,0.054,17/20,0.0015
+gcd,all,proposto − SS-kmeans (K estimado),Omniglot,20,-0.0,9/20,0.9563
+gcd,all,proposto − SS-kmeans (K estimado),CUB,10,-0.007,3/10,0.7695
+gcd,all,proposto − SS-kmeans (K oráculo),todos,50,0.018,32/50,0.0233
+gcd,all,proposto − SS-kmeans (K oráculo),sem CUB,40,0.024,26/40,0.0124
+gcd,all,proposto − SS-kmeans (K oráculo),imagens,30,0.0,17/30,0.9344
+gcd,all,proposto − SS-kmeans (K oráculo),séries,20,0.046,15/20,0.0051
+gcd,all,proposto − SS-kmeans (K oráculo),Omniglot,20,0.001,11/20,1.0
+gcd,all,proposto − SS-kmeans (K oráculo),CUB,10,-0.002,6/10,1.0
+gcd,all,proposto − SS-kmeans + protótipos (K oráculo),todos,50,0.018,32/50,0.0233
+gcd,all,proposto − SS-kmeans + protótipos (K oráculo),sem CUB,40,0.024,26/40,0.0124
+gcd,all,proposto − SS-kmeans + protótipos (K oráculo),imagens,30,0.0,17/30,0.9344
+gcd,all,proposto − SS-kmeans + protótipos (K oráculo),séries,20,0.046,15/20,0.0051
+gcd,all,proposto − SS-kmeans + protótipos (K oráculo),Omniglot,20,0.001,11/20,1.0
+gcd,all,proposto − SS-kmeans + protótipos (K oráculo),CUB,10,-0.002,6/10,1.0
+gcd,all,proposto − dicotomia-euclid + ruído,todos,50,0.029,31/50,0.0054
+gcd,all,proposto − dicotomia-euclid + ruído,sem CUB,40,0.041,30/40,0.0001
+gcd,all,proposto − dicotomia-euclid + ruído,imagens,30,0.003,14/30,0.805
+gcd,all,proposto − dicotomia-euclid + ruído,séries,20,0.067,17/20,0.0007
+gcd,all,proposto − dicotomia-euclid + ruído,Omniglot,20,0.016,13/20,0.0826
+gcd,all,proposto − dicotomia-euclid + ruído,CUB,10,-0.023,1/10,0.0195
+gcd,new,proposto − SS-kmeans (K estimado),todos,50,0.017,29/50,0.1793
+gcd,new,proposto − SS-kmeans (K estimado),sem CUB,40,0.031,26/40,0.0311
+gcd,new,proposto − SS-kmeans (K estimado),imagens,30,0.018,18/30,0.1598
+gcd,new,proposto − SS-kmeans (K estimado),séries,20,0.015,11/20,0.5256
+gcd,new,proposto − SS-kmeans (K estimado),Omniglot,20,0.047,15/20,0.0055
+gcd,new,proposto − SS-kmeans (K estimado),CUB,10,-0.041,3/10,0.0625
+gcd,new,proposto − SS-kmeans (K oráculo),todos,50,0.018,26/50,0.2815
+gcd,new,proposto − SS-kmeans (K oráculo),sem CUB,40,0.034,25/40,0.0285
+gcd,new,proposto − SS-kmeans (K oráculo),imagens,30,0.024,17/30,0.2369
+gcd,new,proposto − SS-kmeans (K oráculo),séries,20,0.009,9/20,0.8276
+gcd,new,proposto − SS-kmeans (K oráculo),Omniglot,20,0.059,16/20,0.004
+gcd,new,proposto − SS-kmeans (K oráculo),CUB,10,-0.047,1/10,0.0781
+gcd,new,proposto − SS-kmeans + protótipos (K oráculo),todos,50,0.018,26/50,0.2815
+gcd,new,proposto − SS-kmeans + protótipos (K oráculo),sem CUB,40,0.034,25/40,0.0285
+gcd,new,proposto − SS-kmeans + protótipos (K oráculo),imagens,30,0.024,17/30,0.2369
+gcd,new,proposto − SS-kmeans + protótipos (K oráculo),séries,20,0.009,9/20,0.8276
+gcd,new,proposto − SS-kmeans + protótipos (K oráculo),Omniglot,20,0.059,16/20,0.004
+gcd,new,proposto − SS-kmeans + protótipos (K oráculo),CUB,10,-0.047,1/10,0.0781
+gcd,new,proposto − dicotomia-euclid + ruído,todos,50,0.09,39/50,0.0
+gcd,new,proposto − dicotomia-euclid + ruído,sem CUB,40,0.117,33/40,0.0
+gcd,new,proposto − dicotomia-euclid + ruído,imagens,30,0.092,25/30,0.0002
+gcd,new,proposto − dicotomia-euclid + ruído,séries,20,0.086,14/20,0.0192
+gcd,new,proposto − dicotomia-euclid + ruído,Omniglot,20,0.147,19/20,0.0001
+gcd,new,proposto − dicotomia-euclid + ruído,CUB,10,-0.018,6/10,0.9414
+gcd,k_err,proposto − SS-kmeans (K estimado),todos,50,-7.26,32/50,0.0008
+gcd,k_err,proposto − SS-kmeans (K estimado),sem CUB,40,-7.45,23/40,0.0101
+gcd,k_err,proposto − SS-kmeans (K estimado),imagens,30,-12.667,26/30,0.0002
+gcd,k_err,proposto − SS-kmeans (K estimado),séries,20,0.85,6/20,0.5692
+gcd,k_err,proposto − SS-kmeans (K estimado),Omniglot,20,-15.75,17/20,0.0023
+gcd,k_err,proposto − SS-kmeans (K estimado),CUB,10,-6.5,9/10,0.0234
+gcd,k_err,proposto − dicotomia-euclid + ruído,todos,50,-2.64,26/50,0.2048
+gcd,k_err,proposto − dicotomia-euclid + ruído,sem CUB,40,-3.0,22/40,0.2029
+gcd,k_err,proposto − dicotomia-euclid + ruído,imagens,30,-2.667,14/30,0.4872
+gcd,k_err,proposto − dicotomia-euclid + ruído,séries,20,-2.6,12/20,0.1564
+gcd,k_err,proposto − dicotomia-euclid + ruído,Omniglot,20,-3.4,10/20,0.4995
+gcd,k_err,proposto − dicotomia-euclid + ruído,CUB,10,-1.2,4/10,0.7852
+descoberta,acc,proposto − kmeans (K oráculo),todos,50,-0.053,17/50,0.002
+descoberta,acc,proposto − kmeans (K oráculo),sem CUB,40,-0.043,16/40,0.0395
+descoberta,acc,proposto − kmeans (K oráculo),imagens,30,-0.055,8/30,0.0048
+descoberta,acc,proposto − kmeans (K oráculo),séries,20,-0.05,9/20,0.2122
+descoberta,acc,proposto − kmeans (K oráculo),Omniglot,20,-0.037,7/20,0.1119
+descoberta,acc,proposto − kmeans (K oráculo),CUB,10,-0.092,1/10,0.0078
+descoberta,acc,proposto − aglom. ward (K oráculo),todos,50,-0.074,7/50,0.0
+descoberta,acc,proposto − aglom. ward (K oráculo),sem CUB,40,-0.067,7/40,0.0002
+descoberta,acc,proposto − aglom. ward (K oráculo),imagens,30,-0.085,3/30,0.0
+descoberta,acc,proposto − aglom. ward (K oráculo),séries,20,-0.058,4/20,0.0463
+descoberta,acc,proposto − aglom. ward (K oráculo),Omniglot,20,-0.077,3/20,0.0011
+descoberta,acc,proposto − aglom. ward (K oráculo),CUB,10,-0.101,0/10,0.002
+descoberta,acc,proposto − NCA + kmeans (K oráculo),todos,50,-0.101,8/50,0.0
+descoberta,acc,proposto − NCA + kmeans (K oráculo),sem CUB,40,-0.096,8/40,0.0
+descoberta,acc,proposto − NCA + kmeans (K oráculo),imagens,30,-0.131,0/30,0.0
+descoberta,acc,proposto − NCA + kmeans (K oráculo),séries,20,-0.055,8/20,0.1031
+descoberta,acc,proposto − NCA + kmeans (K oráculo),Omniglot,20,-0.138,0/20,0.0001
+descoberta,acc,proposto − NCA + kmeans (K oráculo),CUB,10,-0.119,0/10,0.002
+descoberta,acc,proposto − kmeans (K silhueta),todos,50,0.064,31/50,0.0317
+descoberta,acc,proposto − kmeans (K silhueta),sem CUB,40,0.08,27/40,0.0127
+descoberta,acc,proposto − kmeans (K silhueta),imagens,30,0.07,21/30,0.0417
+descoberta,acc,proposto − kmeans (K silhueta),séries,20,0.056,10/20,0.2179
+descoberta,acc,proposto − kmeans (K silhueta),Omniglot,20,0.104,17/20,0.0137
+descoberta,acc,proposto − kmeans (K silhueta),CUB,10,0.0,4/10,0.6074
+descoberta,acc,proposto − dicotomia-euclid (K auto),todos,50,0.102,39/50,0.0
+descoberta,acc,proposto − dicotomia-euclid (K auto),sem CUB,40,0.131,35/40,0.0
+descoberta,acc,proposto − dicotomia-euclid (K auto),imagens,30,0.082,22/30,0.0009
+descoberta,acc,proposto − dicotomia-euclid (K auto),séries,20,0.133,17/20,0.0005
+descoberta,acc,proposto − dicotomia-euclid (K auto),Omniglot,20,0.128,18/20,0.0002
+descoberta,acc,proposto − dicotomia-euclid (K auto),CUB,10,-0.011,4/10,0.4258
+deteccao,auroc,proposto − LR-MSP,todos,50,0.0,28/50,0.6186
+deteccao,auroc,proposto − LR-MSP,sem CUB,40,0.005,24/40,0.2016
+deteccao,auroc,proposto − LR-MSP,imagens,30,0.001,18/30,0.5561
+deteccao,auroc,proposto − LR-MSP,séries,20,-0.0,10/20,1.0
+deteccao,auroc,proposto − LR-MSP,Omniglot,20,0.01,14/20,0.0637
+deteccao,auroc,proposto − LR-MSP,CUB,10,-0.017,4/10,0.1934
+deteccao,auroc,proposto − 1NN-dist,todos,50,0.082,45/50,0.0
+deteccao,auroc,proposto − 1NN-dist,sem CUB,40,0.096,37/40,0.0
+deteccao,auroc,proposto − 1NN-dist,imagens,30,0.097,28/30,0.0
+deteccao,auroc,proposto − 1NN-dist,séries,20,0.06,17/20,0.0017
+deteccao,auroc,proposto − 1NN-dist,Omniglot,20,0.132,20/20,0.0
+deteccao,auroc,proposto − 1NN-dist,CUB,10,0.026,8/10,0.0645
+deteccao,auroc,proposto − centroid-dist,todos,50,0.092,40/50,0.0
+deteccao,auroc,proposto − centroid-dist,sem CUB,40,0.115,37/40,0.0
+deteccao,auroc,proposto − centroid-dist,imagens,30,0.092,23/30,0.0
+deteccao,auroc,proposto − centroid-dist,séries,20,0.092,17/20,0.0
+deteccao,auroc,proposto − centroid-dist,Omniglot,20,0.137,20/20,0.0
+deteccao,auroc,proposto − centroid-dist,CUB,10,0.003,3/10,0.9219
+deteccao,auroc,proposto − dicotomia-euclid,todos,50,0.093,46/50,0.0
+deteccao,auroc,proposto − dicotomia-euclid,sem CUB,40,0.111,38/40,0.0
+deteccao,auroc,proposto − dicotomia-euclid,imagens,30,0.1,28/30,0.0
+deteccao,auroc,proposto − dicotomia-euclid,séries,20,0.083,18/20,0.0
+deteccao,auroc,proposto − dicotomia-euclid,Omniglot,20,0.139,20/20,0.0
+deteccao,auroc,proposto − dicotomia-euclid,CUB,10,0.021,8/10,0.0371

@@ -1,0 +1,41 @@
+novelty,seed,method,acc,ari,k_est,k_true
+random,20,kmeans (K oráculo),0.9866666666666667,0.9659613615455381,5,5
+random,20,kmeans (K silhueta),0.8266666666666667,0.8157137846369695,8,5
+random,20,aglom. ward (K oráculo),1.0,1.0,5,5
+random,20,NCA + kmeans (K oráculo),0.9866666666666667,0.9659613615455381,5,5
+random,20,dicotomia-logreg (K auto),0.8,0.7358112494002765,5,5
+random,20,dicotomia-logreg K auto + Ward,1.0,1.0,5,5
+random,20,dicotomia-hgb (K auto),0.7733333333333333,0.7353864117346567,12,5
+random,20,dicotomia-hgb K auto + Ward,0.72,0.6971217322418801,12,5
+random,21,kmeans (K oráculo),0.68,0.4106520657043305,5,5
+random,21,kmeans (K silhueta),0.5733333333333334,0.44288891319406465,8,5
+random,21,aglom. ward (K oráculo),0.68,0.41159759847708305,5,5
+random,21,NCA + kmeans (K oráculo),0.68,0.4047928047565871,5,5
+random,21,dicotomia-logreg (K auto),0.52,0.23204097219102385,5,5
+random,21,dicotomia-logreg K auto + Ward,0.68,0.41159759847708305,5,5
+random,21,dicotomia-hgb (K auto),0.3333333333333333,0.1027491514020978,3,5
+random,21,dicotomia-hgb K auto + Ward,0.4666666666666667,0.15693763291523805,3,5
+random,22,kmeans (K oráculo),0.9466666666666667,0.8742447129909365,5,5
+random,22,kmeans (K silhueta),0.5333333333333333,0.5678614579138139,15,5
+random,22,aglom. ward (K oráculo),0.9733333333333334,0.9344137756394024,5,5
+random,22,NCA + kmeans (K oráculo),0.92,0.8157579577686732,5,5
+random,22,dicotomia-logreg (K auto),0.6266666666666667,0.6512669962917181,12,5
+random,22,dicotomia-logreg K auto + Ward,0.6133333333333333,0.6372549019607843,12,5
+random,22,dicotomia-hgb (K auto),0.6266666666666667,0.6020561486753657,15,5
+random,22,dicotomia-hgb K auto + Ward,0.6,0.6158565361019349,15,5
+random,23,kmeans (K oráculo),0.56,0.35655123934105565,5,5
+random,23,kmeans (K silhueta),0.49333333333333335,0.3439988918900201,7,5
+random,23,aglom. ward (K oráculo),0.5866666666666667,0.3843335135459843,5,5
+random,23,NCA + kmeans (K oráculo),0.56,0.30108501828512707,5,5
+random,23,dicotomia-logreg (K auto),0.6533333333333333,0.49411643535803484,4,5
+random,23,dicotomia-logreg K auto + Ward,0.4533333333333333,0.16183462291414188,4,5
+random,23,dicotomia-hgb (K auto),0.56,0.4790663208595776,3,5
+random,23,dicotomia-hgb K auto + Ward,0.37333333333333335,0.14569194452640896,3,5
+random,24,kmeans (K oráculo),0.56,0.4390158069151588,5,5
+random,24,kmeans (K silhueta),0.5333333333333333,0.4315730019768427,5,5
+random,24,aglom. ward (K oráculo),0.56,0.4390158069151588,5,5
+random,24,NCA + kmeans (K oráculo),0.5333333333333333,0.46078964697798264,5,5
+random,24,dicotomia-logreg (K auto),0.5733333333333334,0.514487708210594,6,5
+random,24,dicotomia-logreg K auto + Ward,0.56,0.43407465054326677,6,5
+random,24,dicotomia-hgb (K auto),0.7466666666666667,0.6867703203673989,5,5
+random,24,dicotomia-hgb K auto + Ward,0.56,0.4390158069151588,5,5

@@ -1,0 +1,35 @@
+tabela,métrica,método,omniglot_dinov2,omniglot_hog,cub_dinov2,ts_ShapesAll,ts_NonInvasiveFetalECGThorax1,ts_Crop,ts_SwedishLeaf,omniglot_dinov2_prep,omniglot_hog_prep,cub_dinov2_prep,ts_ShapesAll_prep,ts_NonInvasiveFetalECGThorax1_prep,ts_Crop_prep,ts_SwedishLeaf_prep
+gcd,test_all,dicotomia-hgb + ruído (proposto),0.7550000000000001,0.6092500000000001,0.80175,0.7936363636363637,0.7805194805194805,0.5272727272727272,0.7090909090909091,,,,,,,
+gcd,test_all,SS-kmeans (K estimado),0.74225,0.5885,0.7862499999999999,0.7027272727272728,0.6688311688311688,0.4613636363636363,0.6618181818181819,whiten,sem whiten,sem whiten,whiten,whiten,whiten,sem whiten
+gcd,test_all,SS-kmeans (K oráculo),0.72425,0.579,0.7772500000000001,0.6945454545454546,0.6844155844155845,0.48863636363636365,0.6654545454545454,whiten,sem whiten,sem whiten,whiten,whiten,sem whiten,sem whiten
+gcd,test_all,SS-kmeans + protótipos (K oráculo),0.7135,0.58925,0.784,0.699090909090909,0.6974025974025974,0.4727272727272728,0.6727272727272726,whiten,sem whiten,sem whiten,whiten,sem whiten,sem whiten,sem whiten
+gcd,test_all,dicotomia-euclid + ruído,0.74725,0.5897500000000001,0.8305,0.739090909090909,0.7168831168831169,0.47727272727272735,0.6727272727272727,whiten,sem whiten,sem whiten,whiten,sem whiten,sem whiten,sem whiten
+gcd,test_new,dicotomia-hgb + ruído (proposto),0.655,0.492,0.718,0.708,0.7228571428571429,0.49000000000000005,0.6080000000000001,,,,,,,
+gcd,test_new,SS-kmeans (K estimado),0.6459999999999999,0.45200000000000007,0.72,0.6379999999999999,0.6285714285714286,0.48999999999999994,0.536,whiten,sem whiten,sem whiten,whiten,whiten,whiten,sem whiten
+gcd,test_new,SS-kmeans (K oráculo),0.614,0.434,0.7139999999999999,0.646,0.6685714285714286,0.545,0.536,whiten,sem whiten,sem whiten,sem whiten,sem whiten,sem whiten,sem whiten
+gcd,test_new,SS-kmeans + protótipos (K oráculo),0.6140000000000001,0.438,0.733,0.646,0.7028571428571428,0.52,0.5519999999999999,whiten,sem whiten,sem whiten,sem whiten,sem whiten,sem whiten,sem whiten
+gcd,test_new,dicotomia-euclid + ruído,0.6439999999999999,0.429,0.776,0.642,0.6599999999999999,0.45499999999999996,0.5680000000000001,whiten,whiten,sem whiten,whiten,sem whiten,sem whiten,sem whiten
+gcd,all,dicotomia-hgb + ruído (proposto),0.7047,0.546,0.7571,0.7393103448275862,0.7463054187192119,0.41293103448275864,0.7172413793103447,,,,,,,
+gcd,all,SS-kmeans (K estimado),0.7011000000000001,0.5504,0.7638999999999999,0.6782758620689655,0.6487684729064039,0.4112068965517241,0.6620689655172415,whiten,sem whiten,sem whiten,whiten,whiten,sem whiten,sem whiten
+gcd,all,SS-kmeans (K oráculo),0.6929,0.5551999999999999,0.7589,0.6824137931034482,0.6615763546798029,0.4336206896551724,0.6551724137931035,whiten,sem whiten,sem whiten,whiten,sem whiten,sem whiten,sem whiten
+gcd,all,SS-kmeans + protótipos (K oráculo),0.6929,0.5551999999999999,0.7589,0.6824137931034482,0.6615763546798029,0.4336206896551724,0.6551724137931035,whiten,sem whiten,sem whiten,whiten,sem whiten,sem whiten,sem whiten
+gcd,all,dicotomia-euclid + ruído,0.6701,0.5486000000000001,0.7798999999999999,0.6579310344827587,0.6605911330049261,0.43017241379310345,0.6,whiten,sem whiten,sem whiten,whiten,sem whiten,sem whiten,sem whiten
+gcd,new,dicotomia-hgb + ruído (proposto),0.615,0.44399999999999995,0.6536666666666667,0.6393333333333334,0.7133333333333333,0.39333333333333326,0.672,,,,,,,
+gcd,new,SS-kmeans (K estimado),0.5803333333333333,0.3853333333333333,0.6943333333333334,0.6346666666666666,0.6142857142857143,0.5033333333333333,0.6053333333333334,whiten,sem whiten,sem whiten,whiten,whiten,sem whiten,sem whiten
+gcd,new,SS-kmeans (K oráculo),0.555,0.3853333333333333,0.7003333333333333,0.6426666666666667,0.6714285714285714,0.4866666666666667,0.5813333333333334,whiten,sem whiten,sem whiten,whiten,sem whiten,sem whiten,sem whiten
+gcd,new,SS-kmeans + protótipos (K oráculo),0.555,0.3853333333333333,0.7003333333333333,0.6426666666666667,0.6714285714285714,0.4866666666666667,0.5813333333333334,whiten,sem whiten,sem whiten,whiten,sem whiten,sem whiten,sem whiten
+gcd,new,dicotomia-euclid + ruído,0.46333333333333326,0.3016666666666667,0.6716666666666666,0.524,0.5990476190476189,0.46499999999999997,0.48533333333333334,sem whiten,sem whiten,sem whiten,sem whiten,sem whiten,sem whiten,sem whiten
+gcd,k_err,dicotomia-hgb + ruído (proposto),7.5,18.1,6.1,10.0,3.6,5.8,1.0,,,,,,,
+gcd,k_err,SS-kmeans (K estimado),22.5,34.6,12.6,3.4,5.0,5.2,3.4,whiten,sem whiten,sem whiten,whiten,sem whiten,whiten,sem whiten
+gcd,k_err,dicotomia-euclid + ruído,24.7,7.7,7.3,13.4,2.6,12.0,2.8,whiten,sem whiten,whiten,sem whiten,whiten,sem whiten,sem whiten
+descoberta,acc,dicotomia-hgb (K auto) (proposto),0.7446666666666666,0.5599999999999999,0.736,0.7113333333333334,0.7676190476190476,0.5599999999999999,0.608,,,,,,,
+descoberta,acc,kmeans (K oráculo),0.7676666666666666,0.611,0.8283333333333334,0.7539999999999999,0.7304761904761905,0.615,0.7466666666666668,whiten,sem whiten,sem whiten,whiten,sem whiten,sem whiten,sem whiten
+descoberta,acc,aglom. ward (K oráculo),0.8263333333333331,0.632,0.8373333333333333,0.7706666666666667,0.7457142857142858,0.6016666666666667,0.76,whiten,sem whiten,sem whiten,whiten,sem whiten,sem whiten,sem whiten
+descoberta,acc,NCA + kmeans (K oráculo),0.8696666666666666,0.7103333333333335,0.8546666666666667,0.8086666666666666,0.7295238095238095,0.5933333333333334,0.736,whiten,whiten,whiten,whiten,sem whiten,sem whiten,sem whiten
+descoberta,acc,kmeans (K silhueta),0.6113333333333333,0.48500000000000004,0.7356666666666667,0.706,0.5809523809523809,0.545,0.5919999999999999,sem whiten,sem whiten,whiten,whiten,whiten,sem whiten,sem whiten
+descoberta,acc,dicotomia-euclid (K auto),0.6056666666666666,0.4423333333333333,0.7473333333333332,0.5833333333333333,0.6409523809523809,0.5549999999999999,0.336,sem whiten,sem whiten,sem whiten,sem whiten,sem whiten,sem whiten,sem whiten
+deteccao,auroc,dicotomia-hgb (proposto),0.8767226190476191,0.8029319047619048,0.8254880952380953,0.9158857142857142,0.8849392614188533,0.6829761904761904,0.8592190476190478,,,,,,,
+deteccao,auroc,LR-MSP,0.8618609523809525,0.797397619047619,0.8429395238095237,0.9228119047619048,0.9041545189504374,0.662142857142857,0.8549333333333333,whiten,whiten,sem whiten,whiten,whiten,whiten,whiten
+deteccao,auroc,1NN-dist,0.7736957142857144,0.642074761904762,0.7993076190476189,0.8876380952380953,0.8053692905733723,0.6932738095238096,0.7179428571428572,sem whiten,sem whiten,sem whiten,whiten,sem whiten,sem whiten,sem whiten
+deteccao,auroc,centroid-dist,0.7708085714285714,0.635657619047619,0.8229842857142857,0.8112619047619047,0.7797133138969874,0.6735119047619048,0.7085333333333333,sem whiten,sem whiten,sem whiten,whiten,sem whiten,sem whiten,sem whiten
+deteccao,auroc,dicotomia-euclid,0.7727704761904761,0.6280657142857143,0.8046871428571428,0.84085,0.7964868804664722,0.6758482142857143,0.6985523809523809,sem whiten,sem whiten,sem whiten,whiten,sem whiten,sem whiten,sem whiten

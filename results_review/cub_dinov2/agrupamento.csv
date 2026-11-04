@@ -1,0 +1,81 @@
+novelty,seed,k_hat_oracle,kind,method,acc,k_est,all,new,test_all,test_new
+near,20,20,descoberta,average linkage (P),0.64,,,,,
+near,20,20,descoberta,espectral (P),0.66,,,,,
+near,20,20,descoberta,Ward (espaço),0.6966666666666667,,,,,
+near,20,20,descoberta,k-means (espaço),0.7166666666666667,,,,,
+near,20,20,ponta a ponta,average linkage (P),,36.0,0.641,0.6033333333333334,0.725,0.6
+near,20,20,ponta a ponta,espectral (P),,36.0,0.634,0.5733333333333334,0.7275,0.59
+near,20,20,ponta a ponta,Ward (espaço),,36.0,0.654,0.6066666666666667,0.7325,0.6
+near,20,20,ponta a ponta,k-means (espaço),,36.0,0.655,0.6166666666666667,0.73,0.6
+near,21,20,descoberta,average linkage (P),0.6066666666666667,,,,,
+near,21,20,descoberta,espectral (P),0.6233333333333333,,,,,
+near,21,20,descoberta,Ward (espaço),0.7166666666666667,,,,,
+near,21,20,descoberta,k-means (espaço),0.6766666666666666,,,,,
+near,21,20,ponta a ponta,average linkage (P),,9.0,0.706,0.5233333333333333,0.735,0.6
+near,21,20,ponta a ponta,espectral (P),,9.0,0.705,0.5266666666666666,0.7375,0.61
+near,21,20,ponta a ponta,Ward (espaço),,9.0,0.707,0.5233333333333333,0.735,0.58
+near,21,20,ponta a ponta,k-means (espaço),,9.0,0.708,0.5333333333333333,0.73,0.58
+near,22,16,descoberta,average linkage (P),0.5333333333333333,,,,,
+near,22,16,descoberta,espectral (P),0.5833333333333334,,,,,
+near,22,16,descoberta,Ward (espaço),0.66,,,,,
+near,22,16,descoberta,k-means (espaço),0.56,,,,,
+near,22,16,ponta a ponta,average linkage (P),,18.0,0.691,0.5033333333333333,0.755,0.57
+near,22,16,ponta a ponta,espectral (P),,18.0,0.697,0.52,0.7675,0.61
+near,22,16,ponta a ponta,Ward (espaço),,18.0,0.699,0.5366666666666666,0.765,0.58
+near,22,16,ponta a ponta,k-means (espaço),,18.0,0.698,0.5166666666666667,0.7675,0.61
+near,23,23,descoberta,average linkage (P),0.6433333333333333,,,,,
+near,23,23,descoberta,espectral (P),0.6966666666666667,,,,,
+near,23,23,descoberta,Ward (espaço),0.7133333333333334,,,,,
+near,23,23,descoberta,k-means (espaço),0.7133333333333334,,,,,
+near,23,23,ponta a ponta,average linkage (P),,8.0,0.718,0.54,0.76,0.62
+near,23,23,ponta a ponta,espectral (P),,8.0,0.718,0.54,0.76,0.62
+near,23,23,ponta a ponta,Ward (espaço),,8.0,0.718,0.54,0.76,0.62
+near,23,23,ponta a ponta,k-means (espaço),,8.0,0.718,0.54,0.76,0.62
+near,24,31,descoberta,average linkage (P),0.6066666666666667,,,,,
+near,24,31,descoberta,espectral (P),0.52,,,,,
+near,24,31,descoberta,Ward (espaço),0.67,,,,,
+near,24,31,descoberta,k-means (espaço),0.67,,,,,
+near,24,31,ponta a ponta,average linkage (P),,12.0,0.715,0.51,0.755,0.64
+near,24,31,ponta a ponta,espectral (P),,12.0,0.706,0.4766666666666667,0.745,0.59
+near,24,31,ponta a ponta,Ward (espaço),,12.0,0.719,0.5233333333333333,0.7575,0.65
+near,24,31,ponta a ponta,k-means (espaço),,12.0,0.72,0.5266666666666666,0.7525,0.63
+far,20,19,descoberta,average linkage (P),0.7733333333333333,,,,,
+far,20,19,descoberta,espectral (P),0.9066666666666666,,,,,
+far,20,19,descoberta,Ward (espaço),0.94,,,,,
+far,20,19,descoberta,k-means (espaço),0.94,,,,,
+far,20,19,ponta a ponta,average linkage (P),,19.0,0.778,0.6833333333333333,0.805,0.71
+far,20,19,ponta a ponta,espectral (P),,19.0,0.784,0.7033333333333334,0.81,0.73
+far,20,19,ponta a ponta,Ward (espaço),,19.0,0.814,0.83,0.83,0.81
+far,20,19,ponta a ponta,k-means (espaço),,19.0,0.812,0.8066666666666666,0.835,0.83
+far,21,28,descoberta,average linkage (P),0.8466666666666667,,,,,
+far,21,28,descoberta,espectral (P),0.8133333333333334,,,,,
+far,21,28,descoberta,Ward (espaço),0.8633333333333333,,,,,
+far,21,28,descoberta,k-means (espaço),0.85,,,,,
+far,21,28,ponta a ponta,average linkage (P),,20.0,0.816,0.7466666666666667,0.845,0.79
+far,21,28,ponta a ponta,espectral (P),,20.0,0.814,0.74,0.8475,0.8
+far,21,28,ponta a ponta,Ward (espaço),,20.0,0.827,0.7833333333333333,0.855,0.83
+far,21,28,ponta a ponta,k-means (espaço),,20.0,0.833,0.8033333333333333,0.86,0.85
+far,22,22,descoberta,average linkage (P),0.9266666666666666,,,,,
+far,22,22,descoberta,espectral (P),0.9533333333333334,,,,,
+far,22,22,descoberta,Ward (espaço),0.9566666666666667,,,,,
+far,22,22,descoberta,k-means (espaço),0.9466666666666667,,,,,
+far,22,22,ponta a ponta,average linkage (P),,24.0,0.836,0.87,0.91,0.94
+far,22,22,ponta a ponta,espectral (P),,24.0,0.833,0.86,0.91,0.94
+far,22,22,ponta a ponta,Ward (espaço),,24.0,0.83,0.8466666666666667,0.91,0.94
+far,22,22,ponta a ponta,k-means (espaço),,24.0,0.832,0.8566666666666667,0.91,0.94
+far,23,26,descoberta,average linkage (P),0.94,,,,,
+far,23,26,descoberta,espectral (P),0.84,,,,,
+far,23,26,descoberta,Ward (espaço),0.87,,,,,
+far,23,26,descoberta,k-means (espaço),0.8966666666666666,,,,,
+far,23,26,ponta a ponta,average linkage (P),,26.0,0.862,0.8133333333333334,0.89,0.94
+far,23,26,ponta a ponta,espectral (P),,26.0,0.858,0.8066666666666666,0.89,0.94
+far,23,26,ponta a ponta,Ward (espaço),,26.0,0.856,0.7933333333333333,0.885,0.92
+far,23,26,ponta a ponta,k-means (espaço),,26.0,0.859,0.8033333333333333,0.8925,0.95
+far,24,27,descoberta,average linkage (P),0.8433333333333334,,,,,
+far,24,27,descoberta,espectral (P),0.8566666666666667,,,,,
+far,24,27,descoberta,Ward (espaço),0.88,,,,,
+far,24,27,descoberta,k-means (espaço),0.9066666666666666,,,,,
+far,24,27,ponta a ponta,average linkage (P),,21.0,0.808,0.7433333333333333,0.8375,0.77
+far,24,27,ponta a ponta,espectral (P),,21.0,0.823,0.79,0.845,0.81
+far,24,27,ponta a ponta,Ward (espaço),,21.0,0.812,0.7733333333333333,0.8425,0.79
+far,24,27,ponta a ponta,k-means (espaço),,21.0,0.814,0.7833333333333333,0.835,0.78

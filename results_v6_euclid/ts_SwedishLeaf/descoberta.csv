@@ -1,0 +1,31 @@
+novelty,seed,method,acc,ari,k_est,k_true
+random,20,kmeans (K oráculo),0.9866666666666667,0.9659613615455381,5,5
+random,20,kmeans (K silhueta),0.8266666666666667,0.8157137846369695,8,5
+random,20,aglom. ward (K oráculo),1.0,1.0,5,5
+random,20,NCA + kmeans (K oráculo),0.9866666666666667,0.9659613615455381,5,5
+random,20,dicotomia-euclid (K auto),0.56,0.503510448257239,27,5
+random,20,dicotomia-euclid K auto + Ward,0.41333333333333333,0.4023163669612923,27,5
+random,21,kmeans (K oráculo),0.68,0.4106520657043305,5,5
+random,21,kmeans (K silhueta),0.5733333333333334,0.44288891319406465,8,5
+random,21,aglom. ward (K oráculo),0.68,0.41159759847708305,5,5
+random,21,NCA + kmeans (K oráculo),0.68,0.4047928047565871,5,5
+random,21,dicotomia-euclid (K auto),0.2,0.0,1,5
+random,21,dicotomia-euclid K auto + Ward,0.2,0.0,1,5
+random,22,kmeans (K oráculo),0.9466666666666667,0.8742447129909365,5,5
+random,22,kmeans (K silhueta),0.5333333333333333,0.5678614579138139,15,5
+random,22,aglom. ward (K oráculo),0.9733333333333334,0.9344137756394024,5,5
+random,22,NCA + kmeans (K oráculo),0.92,0.8157579577686732,5,5
+random,22,dicotomia-euclid (K auto),0.4266666666666667,0.411119302658398,29,5
+random,22,dicotomia-euclid K auto + Ward,0.38666666666666666,0.3956677439077649,29,5
+random,23,kmeans (K oráculo),0.56,0.35655123934105565,5,5
+random,23,kmeans (K silhueta),0.49333333333333335,0.3439988918900201,7,5
+random,23,aglom. ward (K oráculo),0.5866666666666667,0.3843335135459843,5,5
+random,23,NCA + kmeans (K oráculo),0.56,0.30108501828512707,5,5
+random,23,dicotomia-euclid (K auto),0.28,0.10187397811596026,4,5
+random,23,dicotomia-euclid K auto + Ward,0.4533333333333333,0.16183462291414188,4,5
+random,24,kmeans (K oráculo),0.56,0.4390158069151588,5,5
+random,24,kmeans (K silhueta),0.5333333333333333,0.4315730019768427,5,5
+random,24,aglom. ward (K oráculo),0.56,0.4390158069151588,5,5
+random,24,NCA + kmeans (K oráculo),0.5333333333333333,0.46078964697798264,5,5
+random,24,dicotomia-euclid (K auto),0.21333333333333335,0.0,2,5
+random,24,dicotomia-euclid K auto + Ward,0.4,0.19613759806879905,2,5

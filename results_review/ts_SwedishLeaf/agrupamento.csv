@@ -1,0 +1,41 @@
+novelty,seed,k_hat_oracle,kind,method,acc,k_est,all,new,test_all,test_new
+random,20,12,descoberta,average linkage (P),0.7733333333333333,,,,,
+random,20,12,descoberta,espectral (P),0.6133333333333333,,,,,
+random,20,12,descoberta,Ward (espaço),0.72,,,,,
+random,20,12,descoberta,k-means (espaço),0.7066666666666667,,,,,
+random,20,12,ponta a ponta,average linkage (P),,6.0,0.7862068965517242,0.76,0.7272727272727273,0.76
+random,20,12,ponta a ponta,espectral (P),,6.0,0.7931034482758621,0.7733333333333333,0.7272727272727273,0.68
+random,20,12,ponta a ponta,Ward (espaço),,6.0,0.8068965517241379,0.8,0.7272727272727273,0.68
+random,20,12,ponta a ponta,k-means (espaço),,6.0,0.8,0.7866666666666666,0.7272727272727273,0.68
+random,21,3,descoberta,average linkage (P),0.3333333333333333,,,,,
+random,21,3,descoberta,espectral (P),0.49333333333333335,,,,,
+random,21,3,descoberta,Ward (espaço),0.4666666666666667,,,,,
+random,21,3,descoberta,k-means (espaço),0.4533333333333333,,,,,
+random,21,3,ponta a ponta,average linkage (P),,2.0,0.6,0.4666666666666667,0.6181818181818182,0.4
+random,21,3,ponta a ponta,espectral (P),,2.0,0.5793103448275863,0.4266666666666667,0.6181818181818182,0.52
+random,21,3,ponta a ponta,Ward (espaço),,2.0,0.5793103448275863,0.3466666666666667,0.6545454545454545,0.56
+random,21,3,ponta a ponta,k-means (espaço),,2.0,0.5793103448275863,0.3466666666666667,0.6545454545454545,0.56
+random,22,15,descoberta,average linkage (P),0.6266666666666667,,,,,
+random,22,15,descoberta,espectral (P),0.49333333333333335,,,,,
+random,22,15,descoberta,Ward (espaço),0.6,,,,,
+random,22,15,descoberta,k-means (espaço),0.5333333333333333,,,,,
+random,22,15,ponta a ponta,average linkage (P),,5.0,0.6758620689655173,0.68,0.6727272727272727,0.64
+random,22,15,ponta a ponta,espectral (P),,5.0,0.6758620689655173,0.68,0.6727272727272727,0.64
+random,22,15,ponta a ponta,Ward (espaço),,5.0,0.6827586206896552,0.6933333333333334,0.6727272727272727,0.64
+random,22,15,ponta a ponta,k-means (espaço),,5.0,0.6758620689655173,0.68,0.6727272727272727,0.64
+random,23,3,descoberta,average linkage (P),0.56,,,,,
+random,23,3,descoberta,espectral (P),0.5733333333333334,,,,,
+random,23,3,descoberta,Ward (espaço),0.37333333333333335,,,,,
+random,23,3,descoberta,k-means (espaço),0.38666666666666666,,,,,
+random,23,3,ponta a ponta,average linkage (P),,4.0,0.7103448275862069,0.64,0.6909090909090909,0.56
+random,23,3,ponta a ponta,espectral (P),,4.0,0.7172413793103448,0.6533333333333333,0.6909090909090909,0.56
+random,23,3,ponta a ponta,Ward (espaço),,4.0,0.6896551724137931,0.6,0.6545454545454545,0.48
+random,23,3,ponta a ponta,k-means (espaço),,4.0,0.6758620689655173,0.5733333333333334,0.7090909090909091,0.6
+random,24,5,descoberta,average linkage (P),0.7466666666666667,,,,,
+random,24,5,descoberta,espectral (P),0.7466666666666667,,,,,
+random,24,5,descoberta,Ward (espaço),0.56,,,,,
+random,24,5,descoberta,k-means (espaço),0.56,,,,,
+random,24,5,ponta a ponta,average linkage (P),,5.0,0.8137931034482758,0.8133333333333334,0.8363636363636363,0.68
+random,24,5,ponta a ponta,espectral (P),,5.0,0.8068965517241379,0.8,0.8363636363636363,0.68
+random,24,5,ponta a ponta,Ward (espaço),,5.0,0.6896551724137931,0.5733333333333334,0.7454545454545455,0.48
+random,24,5,ponta a ponta,k-means (espaço),,5.0,0.7034482758620689,0.6,0.7454545454545455,0.48
