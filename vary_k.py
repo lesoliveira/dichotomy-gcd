@@ -24,6 +24,7 @@ already in the file are skipped, so the script can be stopped and restarted.
 """
 import argparse
 import time
+import warnings
 from pathlib import Path
 
 import numpy as np
@@ -33,6 +34,9 @@ from sklearn.metrics import roc_auc_score
 import dichotomy_owl as do
 import experiments as E
 import experiments_review as R
+
+# with K = 0 there is no novel sample, so the accuracy on novel classes is empty (NaN)
+warnings.filterwarnings("ignore", category=RuntimeWarning)
 
 
 def acc(y, p, is_old):
