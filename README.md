@@ -49,7 +49,8 @@ or stage by stage:
 | Final tables and Wilcoxon tests | `python final_tables.py` | `results_final/tabelas.md` | K̂ error, accuracy and ablation tables |
 | SimGCD head, clustering alternatives, sensitivity | `bash run_review.sh` | `results_review/revisao.md` | SimGCD comparison, sensitivity table |
 | SimGCD with K̂ from the dichotomy / fixed distance | `bash run_simgcd_khat.sh`, `bash run_simgcd_keuclid.sh` | `results_review/<set>/` | main SimGCD result (75.0 → 77.6, oracle 78.9) |
-| Sensitivity to the number of novel classes K | `bash run_vary_k.sh` | `results_vary_k/` | K̂ vs. K (additional experiment) |
+| Sensitivity to the number of novel classes K | `bash run_vary_k.sh` | `results_vary_k/` | sensitivity to K section |
+| Bias correction of K̂ | `bash run_vary_k_corr.sh` | `results_vary_k/*/vary_k_corr.csv` | sensitivity to K section |
 | Figures | `python make_figures.py`, `python make_dataset_figure.py`, `python fig_dendrogram.py` | `figures/` | transfer, scale, dataset examples, dendrogram |
 
 Evaluation seeds are 20–24; with 10 splits per seed this gives the 50 paired runs used in the

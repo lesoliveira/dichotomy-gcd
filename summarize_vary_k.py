@@ -22,7 +22,9 @@ ROOT = Path("results_vary_k")
 SETS = [("omniglot_dinov2", "Omniglot · DINOv2"), ("omniglot_hog", "Omniglot · HOG"),
         ("cub_dinov2", "CUB · DINOv2"), ("ts_ShapesAll", "ShapesAll · MiniRocket")]
 OURS = "dicotomia-hgb + ruído"
+CORR = "dicotomia-hgb corrigida"
 METHODS = [(OURS, "Dichotomy (ours)", B, "-o"),
+           (CORR, "Dichotomy, corrected count", "#8fb8ea", "-.o"),
            ("dicotomia-euclid + ruído", "Same pipeline, fixed distance", O, "--s"),
            ("SS-kmeans (K estimado)", "SS-k-means, estimated K", G, ":^"),
            ("SimGCD raso (K da dicotomia)", "SimGCD, K from dichotomy", P, "-D"),
@@ -35,6 +37,13 @@ def load(d):
     if not f.exists():
         return None
     x = pd.read_csv(f)
+    fc = ROOT / d / "vary_k_corr.csv"
+    if fc.exists():                      # K̂ with the bias correction (vary_k_corr.py)
+        c = pd.read_csv(fc)
+        c = c[(c.method == "dicotomia-hgb") & (c["corr"] == "rate")].copy()
+        c["method"], c["whiten"] = CORR, False
+        x = pd.concat([x, c[["novelty", "seed", "k_true", "method", "whiten", "k_est", "test_all",
+                             "test_old", "test_new"]]])
     x["k_err"] = (x.k_est - x.k_true).abs()
     # best of whitened / non-whitened for the baselines that have both
     keep = []
@@ -83,25 +92,30 @@ def main():
         ks = sorted(x.k_true.unique())
         ax = axs[0, j]
         ax.plot(ks, ks, color="#d0cfca", lw=1, zorder=0)
-        for m, lab, c, st in METHODS[:3]:
+        for m, lab, c, st in METHODS[:4]:
             s = x[x.method == m].groupby("k_true").k_est
             ax.errorbar(s.mean().index, s.mean().values, yerr=s.std().values, fmt=st, color=c,
                         lw=1.4, ms=3.5, capsize=2, label=lab)
         ax.set_title(name, loc="left", fontsize=8.5)
         ax.set_xticks(ks)
         ax = axs[1, j]
-        for m, lab, c, st in METHODS:
+        for m, lab, c, st in [M for M in METHODS if M[0] != CORR]:
             s = 100 * x[x.method == m].groupby("k_true").test_all.mean()
             ax.plot(s.index, s.values, st, color=c, lw=1.4, ms=3.5, label=lab)
-        ax.set_xticks(ks); ax.set_xlabel("true number of novel classes $K$")
+        ax.set_xticks(ks)
         for a in axs[:, j]:
             a.grid(axis="y", color="#e6e5e0", lw=.7)
     axs[0, 0].set_ylabel(r"estimated $\hat K$")
     axs[1, 0].set_ylabel("test accuracy, all classes (%)")
     h0, l0 = axs[0, 0].get_legend_handles_labels()
     h1, l1 = axs[1, 0].get_legend_handles_labels()
-    fig.legend(h1, l1, loc="lower center", ncol=3, frameon=False, fontsize=7.5)
-    fig.tight_layout(rect=(0, 0.08, 1, 1))
+    seen = dict(zip(l1, h1))
+    seen.update({l: h for l, h in zip(l0, h0) if l not in seen})
+    order = [lab for _, lab, _, _ in METHODS if lab in seen]
+    fig.supxlabel("true number of novel classes $K$", fontsize=9, y=0.1)
+    fig.legend([seen[l] for l in order], order, loc="lower center", ncol=4, frameon=False,
+               fontsize=7.5)
+    fig.tight_layout(rect=(0, 0.1, 1, 1))
     Path("figures").mkdir(exist_ok=True)
     fig.savefig("figures/vary_k.pdf"); fig.savefig("figures/vary_k.png", dpi=180)
     print("figures/vary_k.pdf written")
