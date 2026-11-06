@@ -14,6 +14,10 @@ L alone, in the pseudo-novel scenario that the calibration already builds:
   K̂₀         = spur_rate * n_rej_kn                         ("rate" correction)
   K̂_corr     = max(0, K̂ - round(K̂₀))
 
+"binom" correction: K̂₀ = sum over known classes c of P(Binomial(n_c, q_c) >= m), where q_c is
+the out-of-fold rejection rate of the labelled samples of c and n_c = (U samples accepted as
+c) / (1 - q_c); i.e. the expected number of known classes with at least m rejected samples.
+
 Also recorded: "pseudo" correction = K̂_pseudo - n_pseudo without rescaling, and the true
 number of known-dominated clusters in U (uses labels of U, for evaluation only).
 
@@ -110,6 +114,35 @@ def pipeline(dic, Xl, yl, Xu, calib, oof):
     return pred, rej, Rr
 
 
+def class_rates(Rr, oof, yl, thr):
+    """Per known class: rejection rate of its labelled samples out of fold (q_c) and the
+    number of U samples accepted as that class (no labels of U)."""
+    classes = Rr["classes"]
+    qc = np.array([(oof[yl == c] < thr).mean() for c in classes])
+    acc_pred = Rr["pred"][~Rr["rej"]]
+    nacc = np.array([(acc_pred == c).sum() for c in classes])
+    return qc, nacc
+
+
+def binom_offset(Rr, oof, yl, thr, m):
+    """Expected number of known classes with at least m of their U samples rejected:
+    sum_c P(Binomial(n_c, q_c) >= m), with n_c = accepted_c / (1 - q_c). Assumes that the
+    rejected samples of one known class form one cluster and that classes do not mix."""
+    from scipy.stats import binom
+    qc, nacc = class_rates(Rr, oof, yl, thr)
+    n = np.rint(nacc / np.clip(1 - qc, 0.05, 1)).astype(int)
+    return float(binom.sf(m - 1, n, qc).sum())
+
+
+def cluster_info(pred, rej, Rr, is_known):
+    """size:known fraction:mean max known score, per discovered cluster (evaluation only)."""
+    out = []
+    for k in np.unique(pred[rej]):
+        mem = rej & (pred == k)
+        out.append(f"{mem.sum()}:{is_known[mem].mean():.2f}:{Rr['S'][mem].max(1).mean():.3f}")
+    return " ".join(out)
+
+
 def drop_known_like(pred, rej, Rr, n_drop):
     """Send the n_drop most known-like discovered clusters back to their argmax known class."""
     pred, rej = pred.copy(), rej.copy()
@@ -138,17 +171,22 @@ def one_run(data, n_known, K, novelty, seed):
         oof = do.oof_known_scores(Xl, yl, clf, seed)
         pred, rej, Rr = pipeline(dic, Xl, yl, Xu, calib, oof)
         k_raw = len(np.unique(pred[rej])) if rej.any() else 0
-        n_acc = int((Rr["score"] >= float(np.quantile(oof, 1.0 - calib.known_tpr))).sum())
+        thr = float(np.quantile(oof, 1.0 - calib.known_tpr))
+        n_acc = int((Rr["score"] >= thr).sum())
         tpr = calib.known_tpr
         n_rej_kn = n_acc * (1 - tpr) / max(tpr, 1e-6)
         rate = st["ps_spur"] / max(st["ps_rej_known"], 1)
-        k0 = {"rate": rate * n_rej_kn, "pseudo": st["ps_k_hat"] - st["ps_n_new"]}
+        k0 = {"rate": rate * n_rej_kn, "pseudo": st["ps_k_hat"] - st["ps_n_new"],
+              "binom": binom_offset(Rr, oof, yl, thr, calib.min_size)}
         true_spur, _ = spurious(pred, rej, ~is_new_u)
+        qc, nacc = class_rates(Rr, oof, yl, thr)
         auroc = roc_auc_score(~is_new_u, Rr["score"]) if K > 0 else np.nan
         common = dict(base, cut=calib.cut, min_size=calib.min_size, tpr=tpr, n_rej_kn_est=n_rej_kn,
                       n_rej_kn_true=int((Rr["rej"] & ~is_new_u).sum()), true_spur=true_spur,
-                      spur_rate=rate, auroc=auroc, **st)
-        for corr in ("none", "rate", "pseudo"):
+                      spur_rate=rate, auroc=auroc, qc=" ".join(f"{v:.2f}" for v in qc),
+                      nacc=" ".join(map(str, nacc)), clusters=cluster_info(pred, rej, Rr, ~is_new_u),
+                      **st)
+        for corr in ("none", "rate", "pseudo", "binom"):
             n_drop = 0 if corr == "none" else max(0, int(round(k0[corr])))
             p2, r2 = drop_known_like(pred, rej, Rr, n_drop)
             pt = do.classify_with_bank(dic, Xt, np.vstack([Xl, Xu[r2]]), np.r_[yl, p2[r2]])
@@ -194,5 +232,5 @@ if __name__ == "__main__":
                 rows.to_csv(f, mode="a", header=not f.exists(), index=False)
                 h = rows[(rows.method == "dicotomia-hgb")].set_index("corr")
                 print(f"[K={K} {novelty} seed {seed}] K̂ raw {h.k_raw.iloc[0]}  "
-                      f"rate {h.k_est['rate']}  pseudo {h.k_est['pseudo']}  "
+                      f"rate {h.k_est['rate']}  pseudo {h.k_est['pseudo']}  binom {h.k_est['binom']}  "
                       f"(true spurious {h.true_spur.iloc[0]}, {time.time() - t0:.0f} s)", flush=True)

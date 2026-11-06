@@ -48,10 +48,11 @@ def paired(X, a, b, col):
 def main():
     X = load()
     txt = ["# Bias correction of K̂\n"]
-    H = X[X.name == "dicotomia-hgb [rate]"]
-    r = np.corrcoef(H.k0, H.true_spur)[0, 1]
-    txt.append(f"Correlation between the estimated offset K̂₀ (rate) and the true number of "
-               f"known-dominated clusters in U: r = {r:.2f}\n")
+    for c in ("rate", "pseudo", "binom"):
+        H = X[X.name == f"dicotomia-hgb [{c}]"]
+        r = np.corrcoef(H.k0, H.true_spur)[0, 1]
+        txt.append(f"Offset {c}: mean K̂₀ {H.k0.mean():.1f} vs true known-dominated clusters "
+                   f"{H.true_spur.mean():.1f}, r = {r:.2f}\n")
     for sub, lab in ((X[X.k_true > 0], "K > 0"), (X[X.k_true == 0], "K = 0")):
         g = sub.groupby(["set", "name"])
         t = pd.DataFrame({"K̂−K": g.bias.mean().round(1), "|K̂−K|": g.err.mean().round(1),
@@ -63,7 +64,7 @@ def main():
         txt += [f"\n## Pooled, {lab}\n", t.to_markdown(), "\n"]
     P = X[X.k_true > 0]
     rows = []
-    for c in ("rate", "pseudo"):
+    for c in ("rate", "pseudo", "binom"):
         rows += [paired(P, f"dicotomia-hgb [{c}]", "dicotomia-hgb [none]", "err"),
                  paired(P, f"dicotomia-hgb [{c}]", "dicotomia-hgb [none]", "test_all"),
                  paired(P, f"dicotomia-hgb [{c}]", "SS-kmeans (K estimado)", "err"),
