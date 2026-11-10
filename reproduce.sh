@@ -26,8 +26,12 @@ bash run_review.sh
 # 7. SimGCD with the K estimated by the learned dichotomy and by the fixed distance
 bash run_simgcd_khat.sh
 bash run_simgcd_keuclid.sh
-# 8. figures
+# 8. sensitivity to the number of novel classes, bias correction of K̂, baselines without PCA
+bash run_vary_k.sh
+bash run_vary_k_corr.sh
+bash run_fullfeat.sh
+# 9. figures
 "$PY" make_figures.py
 "$PY" make_dataset_figure.py
 "$PY" fig_dendrogram.py
-echo "done: tables in results_final/tabelas.md and results_review/revisao.md, figures in figures/"
+echo "done: tables in results_final/tabelas.md, results_review/revisao.md, results_vary_k/*.md, results_fullfeat/fullfeat.md; figures in figures/"

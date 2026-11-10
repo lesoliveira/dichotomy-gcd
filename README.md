@@ -1,7 +1,12 @@
 # How Many Novel Classes? Estimating K for Generalized Category Discovery with a Learned Dichotomy
 
-Code and results for the paper under double-blind review. Everything runs on a CPU; a GPU
-is used only, if present, to extract the frozen DINOv2 features.
+Code and results for the paper by Luiz S. Oliveira (UFPR), Yandre M. G. Costa (UEM),
+Alceu S. Britto Jr. (PUCPR) and George D. C. Cavalcanti (UFPE), submitted to
+*Knowledge-Based Systems*. It continues our work on open set recognition with learned
+dissimilarity (Teixeira et al., *Knowledge-Based Systems* 327, 114108, 2025).
+
+Everything runs on a CPU; a GPU is used only, if present, to extract the frozen DINOv2
+features.
 
 The method learns a dissimilarity from the known classes (the dichotomy transformation
 z(a,b) = [|a−b|, a⊙b] fed to a gradient-boosting dichotomizer), calibrates its rejection
@@ -51,6 +56,7 @@ or stage by stage:
 | SimGCD with K̂ from the dichotomy / fixed distance | `bash run_simgcd_khat.sh`, `bash run_simgcd_keuclid.sh` | `results_review/<set>/` | main SimGCD result (75.0 → 77.6, oracle 78.9) |
 | Sensitivity to the number of novel classes K | `bash run_vary_k.sh` | `results_vary_k/` | sensitivity to K section |
 | Bias correction of K̂ | `bash run_vary_k_corr.sh` | `results_vary_k/*/vary_k_corr.csv` | sensitivity to K section |
+| Baselines on full features (no PCA) | `bash run_fullfeat.sh` | `results_fullfeat/` | robustness: baselines without PCA |
 | Figures | `python make_figures.py`, `python make_dataset_figure.py`, `python fig_dendrogram.py` | `figures/` | transfer, scale, dataset examples, dendrogram |
 
 Evaluation seeds are 20–24; with 10 splits per seed this gives the 50 paired runs used in the
